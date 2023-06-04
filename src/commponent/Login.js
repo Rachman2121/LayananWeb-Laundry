@@ -1,62 +1,78 @@
 import React, { useState } from "react";
+import { FiEye, FiEyeOff } from "react-icons/fi";
+import { Form, Button } from "react-bootstrap";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "../style/Login.css";
-import { Form, Button, Container, Row, Col } from "react-bootstrap";
 
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    
+    // Simulating a successful login
+    // Replace this with your actual login logic
+    if (username === "admin" && password === "password") {
+      toast.success("Login successful!");
+    } else {
+      toast.error("Invalid username or password");
+    }
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
   };
 
   return (
-    
-    <div className="login-container">
-      <Container>
-        <Row className="justify-content-center">
-          <Col md={4}>
-            <div className="login-form">
-              <h1 className="text-center">Get's Started</h1>
-              <h2 className="text-center">Don't have Account?</h2>
-              <Form onSubmit={handleSubmit}>
-                <Form.Group controlId="formBasicEmail">
-                  <Form.Label>Username</Form.Label>
+    <div className="body">
+      <div className="login-container">
+        <div className="login-wrapper">
+          <div className="login-form">
+            <ToastContainer />
+            <h1 className="text-center">Get's Started</h1>
+            <div className="signup-text">
+              Don't have an Account? <a href="/Signup">Sign Up</a>
+            </div>
+            <Form onSubmit={handleSubmit}>
+              <Form.Group controlId="formBasicEmail">
+                <Form.Label>Username</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter username"
+                  value={username}
+                  onChange={(event) => setUsername(event.target.value)}
+                />
+              </Form.Group>
+              <Form.Group controlId="formBasicPassword">
+                <Form.Label>Password</Form.Label>
+                <div className="password-input-container">
                   <Form.Control
-                    type="text"
-                    placeholder="Enter username"
-                    value={username}
-                    onChange={(event) => setUsername(event.target.value)}
-                  />
-                </Form.Group>
-
-                <Form.Group controlId="formBasicPassword">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control
-                    type="password"
+                    type={showPassword ? "text" : "password"}
                     placeholder="Password"
                     value={password}
                     onChange={(event) => setPassword(event.target.value)}
                   />
-                </Form.Group>
-
-                <Button variant="primary" type="submit" block style={
-                    { marginTop:"10px"}
-                }>
-                  Login
-                </Button>
-              </Form>
-
-              <div className="text-center mt-3">
-                <Button variant="link" onClick={( ) => console.log("Daftar")}>
-                  Daftar
-                </Button>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+                  <div className="password-toggle" onClick={togglePasswordVisibility}>
+                    {showPassword ? <FiEye /> : <FiEyeOff />}
+                  </div>
+                </div>
+              </Form.Group>
+              <Button
+                variant="primary"
+                type="submit"
+                block
+                className="login-button"
+                style={{ marginTop: "10px" }}
+              >
+                Login
+              </Button>
+            </Form>
+          </div>
+          <div className="right-section"></div>
+        </div>
+      </div>
     </div>
   );
 }
