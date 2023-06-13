@@ -1,0 +1,77 @@
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .order-table th,
+  .order-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .order-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .order-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .action-button {
+    background-color: rgb(51, 51, 215);
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    background-color: rgb(41, 41, 175);
+  }
+  
+
+  .transaction-button {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .transaction-button:hover {
+    background-color: darkblue;
+  }
+  
+
+  .search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+
+  
+  .transaction-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  
