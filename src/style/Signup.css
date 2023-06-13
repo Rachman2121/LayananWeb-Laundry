@@ -8,10 +8,12 @@
     align-items: center;
     border-radius: 5px;
   }
+
+
   
   .signup-text {
     margin-bottom: 15px;
-    margin-top: 15px; /* Adjust the top margin as needed */
+    margin-top: 6px; /* Adjust the top margin as needed */
     font-weight: bold;
   }
   
