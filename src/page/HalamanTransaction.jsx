@@ -1,10 +1,12 @@
 import React from 'react'
 import Transaction from '../commponent/Transaction'
+import Navigation from '../commponent/Navigation'
 
 const HalamanTransaction = () => {
   return (
     <div>
-    <Transaction/>
+      <Navigation/>
+      <Transaction/>
     </div>
   )
 }
