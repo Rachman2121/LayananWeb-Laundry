@@ -1,13 +1,15 @@
 import React from "react";
-import "./../style/Orderlist.css"
+import "./../style/Orderlist.css";
 const Orderlist = () => {
-    return(
-        
-            <div>
-
+  return (
+    <div>
       <h1>Order List</h1>
       <div className="search-container">
-        <input type="text" placeholder="Search by ID" className="search-input" />
+        <input
+          type="text"
+          placeholder="Search by ID"
+          className="search-input"
+        />
       </div>
       <table className="order-table">
         <thead>
@@ -21,26 +23,27 @@ const Orderlist = () => {
           </tr>
         </thead>
         <tbody>
-          
-            <tr>
-              <td>test</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-              <button className="transaction-button"><a href="/Transaction" style={{color: "white"}}>+Create</a></button>
-              </td>
-              <td>
-              <button className="action-button">Edit</button>
-                <button className="action-button">Delete</button>
-              </td>
-            </tr>
+          <tr>
+            <td>test</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <button className="transaction-button">
+                <a href="/Transaction" style={{ color: "white" }}>
+                  +Create
+                </a>
+              </button>
+            </td>
+            <td>
+              <button className="action-button" href="/edit">Edit</button>
+              <button className="action-button">Delete</button>
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
-        
-    )
+  );
+};
 
-} 
-
-export default Orderlist
+export default Orderlist;
