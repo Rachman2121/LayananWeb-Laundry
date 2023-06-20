@@ -7,8 +7,8 @@ const Navigation = () => {
       <ul className="nav-links">
         <li><a href='/Dasboard'>GO Laundry</a></li>
         <li><a href="/Orderlist">Order List</a></li>
-        <li><a href="#">Transection Data</a></li>
-        <li><a href="#">Logout</a></li>
+        <li><a href="/TransactionData">Transection Data</a></li>
+        <li><a href="/">Logout</a></li>
       </ul>
     </nav>
   );

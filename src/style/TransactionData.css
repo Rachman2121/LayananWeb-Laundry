@@ -1,0 +1,38 @@
+.Transaction-data{
+    max-width: 1200px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    border-collapse: collapse;
+}
+
+.transaction-data {
+  border-collapse: collapse;
+}
+
+.transaction-data th,
+.transaction-data td {
+  border: none;
+}
+
+
+
+
+
+
+.button-back{
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: blue;
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
