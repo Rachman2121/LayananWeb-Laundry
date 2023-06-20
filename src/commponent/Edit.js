@@ -58,8 +58,9 @@ function Edit() {
             onChange={(e) => setStatus(e.target.value)}
           >
             <option value="">-- Select Status --</option>
-            <option value="Active">Active</option>
-            <option value="Inactive">Inactive</option>
+            <option value="Complate">Complate</option>
+            <option value="Washed">Washed</option>
+            <option value="Iron">Iron</option>
           </Form.Control>
         </Form.Group>
         <Button type="submit">Save</Button>
