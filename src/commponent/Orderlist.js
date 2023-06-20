@@ -36,7 +36,7 @@ const Orderlist = () => {
               </button>
             </td>
             <td>
-              <button className="action-button" href="/edit">Edit</button>
+              <button className="action-button"><a href="/Edit" style={{color:"white"}}>Edit</a></button>
               <button className="action-button">Delete</button>
             </td>
           </tr>

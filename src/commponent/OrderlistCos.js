@@ -1,6 +1,5 @@
 import React from "react";
 import "./../style/Orderlist.css";
-import { Button } from "react-bootstrap";
 const OrderlistCos = () => {
   return (
     <div>
