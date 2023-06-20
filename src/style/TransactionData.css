@@ -9,12 +9,12 @@
     border-collapse: collapse;
 }
 
-.transaction-data {
+.transaction-table {
   border-collapse: collapse;
 }
 
-.transaction-data th,
-.transaction-data td {
+.transaction-table th,
+.transaction-table td {
   border: none;
 }
 
@@ -30,7 +30,7 @@
     margin-left: auto;
     margin-right: auto;
     color: white;
-    background-color: blue;
+    background-color: #1678F3;
     width: 20%;
     padding: 10px;
     border: none;

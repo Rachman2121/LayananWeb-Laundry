@@ -4,8 +4,16 @@
   align-items: center;
 }
 
+
+.text-Login{
+  
+  margin-left: 0px;
+  font-size: 30px;
+  color: #7D7D7D;
+}
+
 .login-form {
-  flex-basis: 60%;
+  flex-basis: 65%;
   padding: 10px;
   background-color: #f9f9f9;
   justify-content: center;
@@ -19,7 +27,7 @@
 }
 
 .login-form input {
-  width: 130%;
+  width: 90%;
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 10px;
@@ -27,7 +35,7 @@
 }
 
 .login-button {
-  background-color: rgb(51, 51, 215);
+  background-color: #1678F3;
   margin-left: 27%;
   margin-right: auto;
   width: 15%;
@@ -40,7 +48,8 @@
 .right-section {
   flex-basis: 40%;
   padding: 10px;
-  background-color:  #480ad8;
+  background-color:#1678F3 ;
+  border-radius: 79px 0px 0px 79px;
   border-radius: 5px;
   height: 100vh;
   width: 100vh;
@@ -68,13 +77,18 @@
 }
 
 .password-toggle svg {
-  width: 20px;
+  width:350px;
   height: 20px;
   color: #777;
+  margin-top: 10px;
 }
 
 .password-toggle:hover svg {
   color: #333;
+}
+
+.signup-text{
+  color: #7D7D7D;
 }
 
   

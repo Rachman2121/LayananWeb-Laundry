@@ -1,6 +1,7 @@
 .navbar {
     background-color: #efeeee;
     height: 50px;
+    
   }
   
   .nav-links {
@@ -22,6 +23,7 @@
     text-decoration: none;
     text-align: center;
     padding: 15px;
+    
   }
   
   .nav-links a:hover {

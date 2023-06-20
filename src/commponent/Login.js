@@ -31,7 +31,7 @@ function Login() {
         <div className="login-wrapper">
           <div className="login-form">
             <ToastContainer />
-            <h1>Get's Started</h1>
+            <h1 className="text-Login">Get's Started</h1>
             <div className="signup-text">
               Don't have an Account? <a href="/Signup">Sign Up</a>
             </div>

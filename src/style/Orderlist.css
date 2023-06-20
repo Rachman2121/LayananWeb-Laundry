@@ -20,7 +20,7 @@
   }
   
   .action-button {
-    background-color: rgb(51, 51, 215);
+    background-color: #1678F3;
     color: #fff;
     border: none;
     padding: 6px 10px;
@@ -30,12 +30,12 @@
   }
   
   .action-button:hover {
-    background-color: rgb(41, 41, 175);
+    background-color: #1678F3;
   }
   
 
   .transaction-button {
-    background-color: blue;
+    background-color: #1678F3;
     color: #fff;
     border: none;
     padding: 6px 10px;
@@ -45,7 +45,7 @@
   }
   
   .transaction-button:hover {
-    background-color: darkblue;
+    background-color: #1678F3;
   }
   
 
@@ -67,7 +67,7 @@
 
   
   .transaction-button {
-    background-color: blue;
+    background-color: #1678F3;
     color: white;
     border: none;
     padding: 5px 10px;

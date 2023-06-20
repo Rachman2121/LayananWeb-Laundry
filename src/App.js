@@ -9,6 +9,8 @@ import HalamanTransactionData from "./page/HalamanTransactionData";
 import HalamanEdit from "./page/HalamanEdit";
 import HalamanCosOrder from "./page/HalamanCosOrder";
 import HalamanOrderlistCos from "./page/HalamanOrderlistCos";
+import HalamanTransactionCos from "./page/HalamanTransactionCos";
+import { HalamanDasboardCos } from "./page/HalamanDasboardCos";
 
 
 function App() {
@@ -18,12 +20,14 @@ function App() {
       <Route path="/" element={<HalamanLogin />} />
       <Route path="/Signup" element={<HalamanSignup />} />
       <Route path="/Dasboard" element={<HalamanDasboard />} />
-      <Route path="/orderlist" element={<HalamanOrderlist />} />
+      <Route path="/Orderlist" element={<HalamanOrderlist />} />
       <Route path="/Transaction" element={<HalamanTransaction />}/>
       <Route path="/TransactionData" element={<HalamanTransactionData />}/>
       <Route path="/Edit" element={<HalamanEdit />} />
       <Route path="/Order" element={<HalamanCosOrder />} />
       <Route path="/OrderListCos" element={<HalamanOrderlistCos />} />
+      <Route path="/TransactionCos" element={<HalamanTransactionCos />}/>
+      <Route path="/DasboardCos" element={<HalamanDasboardCos />} />
 
 
     </Routes>
