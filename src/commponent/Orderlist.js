@@ -28,7 +28,7 @@ const Orderlist = () => {
               <td></td>
               <td></td>
               <td>
-              <button className="transaction-button"><a href="/Transaction">+Create</a></button>
+              <button className="transaction-button"><a href="/Transaction" style={{color: "white"}}>+Create</a></button>
               </td>
               <td>
               <button className="action-button">Edit</button>

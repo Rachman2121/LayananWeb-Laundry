@@ -5,6 +5,7 @@ import HalamanSignup from "./page/HalamanSignup";
 import HalamanDasboard from "./page/HalamanDasboard";
 import HalamanOrderlist from "./page/HalamanOrderlist";
 import HalamanTransaction from "./page/HalamanTransaction";
+import HalamanTransactionData from "./page/HalamanTransactionData";
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
       <Route path="/Dasboard" element={<HalamanDasboard />} />
       <Route path="/orderlist" element={<HalamanOrderlist />} />
       <Route path="/Transaction" element={<HalamanTransaction />}/>
+      <Route path="/TransactionData" element={<HalamanTransactionData />}/>
+
     </Routes>
   </Router>
 
