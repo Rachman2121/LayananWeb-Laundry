@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import "./../style/Edit.css"
+
 function Edit() {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
@@ -22,7 +23,7 @@ function Edit() {
   };
 
   return (
-    <div>
+    <div className="Edit">
       <h1>Edit</h1>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="name">
@@ -61,7 +62,7 @@ function Edit() {
             <option value="Inactive">Inactive</option>
           </Form.Control>
         </Form.Group>
-        <Button type="submit">Submit</Button>
+        <Button type="submit">Save</Button>
       </Form>
     </div>
   );
