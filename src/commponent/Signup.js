@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../style/Signup.css";
 import { Form, Button } from "react-bootstrap";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Signup() {
   const [username, setUsername] = useState("");
@@ -14,11 +16,17 @@ function Signup() {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Perform signup logic here
+
+    if (username === "nako" && name ==="Rachman" && address === "Ciamis" && dob === "21-01-2000" && phone === "08976165125" && password === "123" && confirmPassword ==="123") {
+      toast.success("Pendaftaran successful!");
+    } else {
+      toast.error ("Data Belum Diisi");
+    }
   };
 
   return (
     <div className="body">
-      
+      <div className="login-container">
         <div className="login-wrapper">
           <div className="login-form">
             <h1 className="text-center">Sign Up</h1>
@@ -104,6 +112,7 @@ function Signup() {
             </Form>
           </div>
           <div className="right-section"></div>
+        </div>
         </div>
     </div>
   );

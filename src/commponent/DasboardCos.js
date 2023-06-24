@@ -7,7 +7,7 @@ const Dashboard = () => {
       <h1>Welcome to</h1>
       <h1>GO Laundry</h1>
       <h2>Click the button below to start the program</h2>
-      <button className="start-button" ><a href="/orderlist">Get's Started</a></button>
+      <button className="start-button" ><a href="/Order">Get's Started</a></button>
     </div>
   );
 };
