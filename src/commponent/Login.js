@@ -12,10 +12,14 @@ function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Simulating a successful login
-    // Replace this with your actual login logic
-    if (username === "admin" && password === "password") {
+
+    if (username === "admin" && password === "admin") {
       toast.success("Login successful!");
+    } else {
+      toast.error("Invalid username or password");
+    }
+    if (username === "costumer" && password === "costumer") {
+      toast.success("Login Successfull");
     } else {
       toast.error("Invalid username or password");
     }
@@ -54,7 +58,10 @@ function Login() {
                     value={password}
                     onChange={(event) => setPassword(event.target.value)}
                   />
-                  <div className="password-toggle" onClick={togglePasswordVisibility}>
+                  <div
+                    className="password-toggle"
+                    onClick={togglePasswordVisibility}
+                  >
                     {showPassword ? <FiEye /> : <FiEyeOff />}
                   </div>
                 </div>
@@ -65,7 +72,6 @@ function Login() {
                 block
                 className="login-button"
                 style={{ marginTop: "10px" }}
-                
               >
                 Login
               </Button>

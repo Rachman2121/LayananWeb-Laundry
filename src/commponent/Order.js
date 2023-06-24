@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
-import "./../style/Order.css"
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./../style/Order.css";
 
 const Order = () => {
   const [name, setName] = useState("");
@@ -14,6 +16,9 @@ const Order = () => {
     console.log("Name:", name);
     console.log("Address:", address);
     console.log("Date:", date);
+
+    // Show notification
+    toast.success("Order placed successfully!");
 
     // Reset the form
     setName("");
@@ -51,8 +56,9 @@ const Order = () => {
         </Form.Group>
         <Button type="submit">Order</Button>
       </Form>
+      <ToastContainer />
     </div>
   );
 };
 
-export default Order
+export default Order;
