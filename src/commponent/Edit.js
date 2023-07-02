@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
-import "./../style/Edit.css"
+import { toast, ToastContainer } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+import "./../style/Edit.css";
+import "react-toastify/dist/ReactToastify.css";
 
 function Edit() {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
   const [telephone, setTelephone] = useState("");
   const [status, setStatus] = useState("");
+
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,6 +25,8 @@ function Edit() {
     setDate("");
     setTelephone("");
     setStatus("");
+    toast.success("Changes saved successfully!");
+    navigate("/orderlist");
   };
 
   return (
