@@ -15,6 +15,7 @@ const Orderlist = () => {
         <thead>
           <tr>
             <th>Name</th>
+            <th>Address</th>
             <th>Date</th>
             <th>Telephone</th>
             <th>Status</th>
@@ -25,6 +26,7 @@ const Orderlist = () => {
         <tbody>
           <tr>
             <td>test</td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>

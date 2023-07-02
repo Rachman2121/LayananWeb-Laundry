@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import "./../style/Transaction.css"
+import './../style/Transaction.css';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Transaction = () => {
   const [transactionId, setTransactionId] = useState('');
   const [name, setName] = useState('');
@@ -17,8 +20,8 @@ const Transaction = () => {
     // Reset the form
     setTotal('');
     setShowModal(true);
+    toast.success('Transaction submitted!');
   };
-
 
   const Modal = ({ closeModal }) => {
     return (
@@ -33,43 +36,58 @@ const Transaction = () => {
   };
 
   return (
-    <div className="form-Transaction" onSubmit={handleSubmit}>
+    <div className="form-Transaction">
+      <ToastContainer position="top-right" /> {/* Tampilkan ToastContainer di atas */}
       <h1>Transaction</h1>
-      <table>
-        <thead>
-        <th>Transaction ID</th>
-        </thead>
-          <tbody>
-          <td>{transactionId}</td>
-          </tbody>
-          <th>Name</th>
-          <tbody> 
-            <td>{name}</td>
-          </tbody>
+      <form onSubmit={handleSubmit}>
+        <table>
           <thead>
-          <th>Date</th>
+            <tr>
+              <th>Transaction ID</th>
+            </tr>
           </thead>
           <tbody>
-          <td>{date}</td>
+            <tr>
+              <td>{transactionId}</td>
+            </tr>
           </tbody>
-         
-        
-      </table>
-      <div className="form-group">
-        <label htmlFor="total">Total:</label>
-        <input
-          type="number"
-          id="total"
-          value={total}
-          onChange={(e) => setTotal(e.target.value)}
-          required
-          
-        />
-    </div>
-    <button className="submit-button" type="submit">Transaction</button>
-      {showModal && <Modal closeModal={() => setShowModal(false)} />}
+          <thead>
+            <tr>
+              <th>Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{name}</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{date}</td>
+            </tr>
+          </tbody>
+        </table>
+        <div className="form-group">
+          <label htmlFor="total">Total:</label>
+          <input
+            type="number"
+            id="total"
+            value={total}
+            onChange={(e) => setTotal(e.target.value)}
+            required
+          />
+        </div>
+        <button className="submit-button" type="submit">
+          Transaction
+        </button>
+      </form>
     </div>
   );
 };
 
-export default Transaction
+export default Transaction;
