@@ -1,0 +1,95 @@
+.login-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.text-Login{
+  
+  margin-left: 0px;
+  font-size: 30px;
+  color: #7D7D7D;
+}
+
+.login-form {
+  flex-basis: 65%;
+  padding: 10px;
+  background-color: #f9f9f9;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  height: 100vh;
+  width: 100vh;
+}
+
+.login-form input {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.login-button {
+  background-color: #1678F3;
+  margin-left: 27%;
+  margin-right: auto;
+  width: 15%;
+  padding: 5px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+
+.right-section {
+  flex-basis: 40%;
+  padding: 10px;
+  background-color:#1678F3 ;
+  border-radius: 79px 0px 0px 79px;
+  height: 100vh;
+  width: 100vh;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+
+
+.password-toggle {
+  position: absolute;
+  top: 66%;
+  left: 41%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.password-toggle svg {
+  width:60px;
+  height: 20px;
+  color: #777;
+  margin-top: 10px;
+  position: fixed;
+}
+
+.password-toggle:hover svg {
+  color: #333;
+}
+
+.signup-text{
+  color: #7D7D7D;
+}
+
+  
+

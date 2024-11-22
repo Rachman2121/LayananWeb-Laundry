@@ -1,0 +1,58 @@
+.TransactionForm {
+    max-width: 1200px;
+    height: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+  }
+  
+  .TransactionForm h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #1678F3; 
+  }
+  
+  .TransactionForm form {
+    max-width: 100%;
+  }
+  
+  .TransactionForm .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .TransactionForm label {
+    font-weight: bold;
+  }
+  
+  .TransactionForm input[type="text"],
+  .TransactionForm input[type="date"],
+  .TransactionForm input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .TransactionForm button[type="submit"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    background-color: #1678F3;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .TransactionForm button[type="submit"]:hover {
+    background-color: #1678F3;
+  }
+  
