@@ -4,26 +4,33 @@ import { Form, Button } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../style/Login.css";
+import { useNavigate } from "react-router-dom";
+
+
 
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+ const handleSubmit = (event) => {
+  event.preventDefault();
 
-    if (username === "admin" && password === "admin") {
-      toast.success("Login successful!");
-    } else {
-      toast.error("Invalid username or password");
-    }
-    if (username === "costumer" && password === "costumer") {
-      toast.success("Login Successfull");
-    } else {
-      toast.error("Invalid username or password");
-    }
-  };
+  if (username === "admin" && password === "admin") {
+    toast.success("Login successful!");
+    setTimeout(() => {
+      navigate("/Dasboard");
+    }, 1000);
+  } else if (username === "costumer" && password === "costumer") {
+    toast.success("Login successful!");
+    setTimeout(() => {
+      navigate("/DasboardCos");
+    }, 1000);
+  } else {
+    toast.error("Invalid username or password");
+  }
+};
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -77,7 +84,9 @@ function Login() {
               </Button>
             </Form>
           </div>
-          <div className="right-section"></div>
+         <div className="right-section"style={{backgroundColor:"#6fa8ec"}}>
+          
+          </div>
         </div>
       </div>
     </div>

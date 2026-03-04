@@ -1,14 +1,15 @@
-import React from 'react';
-import './../style/Navigation.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./../style/Navigation.css";
 
 const Navigation = () => {
   return (
     <nav className="navbar">
       <ul className="nav-links">
-        <li><a href='/Dasboard'>GO Laundry</a></li>
-        <li><a href="/Orderlist">Order List</a></li>
-        <li><a href="/TransactionData">Transection Data</a></li>
-        <li><a href="/">Logout</a></li>
+        <li><Link to="/Dasboard">GO Laundry</Link></li>
+        <li><Link to="/Orderlist">Order List</Link></li>
+        <li><Link to="/TransactionData">Transaction Data</Link></li>
+        <li><Link to="/">Logout</Link></li>
       </ul>
     </nav>
   );

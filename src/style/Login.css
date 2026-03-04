@@ -2,14 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 
 .text-Login{
   
   margin-left: 0px;
-  font-size: 30px;
-  color: #7D7D7D;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  color: #ea3030;
 }
 
 .login-form {
@@ -19,11 +21,12 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
-  margin-left: auto;
+  margin-left: 35px;
   margin-right: auto;
   border-radius: 5px;
   height: 100vh;
   width: 100vh;
+  
 }
 
 .login-form input {
@@ -35,20 +38,23 @@
 }
 
 .login-button {
-  background-color: #1678F3;
+  background-color: #0071fc;
   margin-left: 27%;
   margin-right: auto;
-  width: 15%;
+  width: 100px;
+  height: 30px;
   padding: 5px;
   align-items: center;
   border-radius: 10px;
+  font-weight: bolder;
+  
 }
 
 
 .right-section {
   flex-basis: 40%;
   padding: 10px;
-  background-color:#1678F3 ;
+  background-color:#6fa8ec ;
   border-radius: 79px 0px 0px 79px;
   height: 100vh;
   width: 100vh;
@@ -63,24 +69,23 @@
 }
 
 
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
 
 .password-toggle {
   position: absolute;
-  top: 66%;
-  left: 41%;
+  right: 15px;
+  top: 50%;
   transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
+  cursor: pointer;
+  opacity: 0;
 }
 
 .password-toggle svg {
-  width:60px;
+  width: 20px;
   height: 20px;
-  color: #777;
-  margin-top: 10px;
-  position: fixed;
 }
 
 .password-toggle:hover svg {
@@ -88,7 +93,9 @@
 }
 
 .signup-text{
-  color: #7D7D7D;
+  color: #010000;
+  font-weight: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
   
